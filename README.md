@@ -1,16 +1,30 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**summeriver13/summeriver13** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Xia Jiang
 
-Here are some ideas to get you started:
+*I am, therefore I think.*
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[![GitHub](https://img.shields.io/badge/-summeriver13-181717?logo=github&logoColor=white)](https://github.com/summeriver13)
+[![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)](#)
+[![Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white)](#)
+
+</div>
+
+I work on developer tooling — the layer where a wrong answer from a linter or a build tool costs more than the code it checks.
+
+## Open upstream work
+
+| Project | Change |
+| --- | --- |
+| [PyCQA/isort #2728](https://github.com/PyCQA/isort/pull/2728) | An action comment on a continuation line ends the sort section only on the next run |
+| [pylint-dev/pylint #11703](https://github.com/pylint-dev/pylint/pull/11703) | `--load-plugins` checkers emit every message twice under `--jobs > 1` |
+| [sphinx-doc/sphinx #14740](https://github.com/sphinx-doc/sphinx/pull/14740) | Five CLI entry points crash when the environment names an unavailable locale |
+| [adamchainz/blacken-docs #447](https://github.com/adamchainz/blacken-docs/pull/447) | Literal blocks inside reStructuredText directives are not Python |
+| [adamchainz/django-http-compression #72](https://github.com/adamchainz/django-http-compression/pull/72) | Fall back when the interpreter is built without Zstandard support |
+| [theskumar/python-dotenv #730](https://github.com/theskumar/python-dotenv/pull/730) | `dotenv run` resolves commands against the `.env` PATH on Windows |
+
+## Toolchain
+
+`uv` · `pnpm` · `ruff` · `biome` · `pytest` · `vitest` · `gh`
+
+<sub>Reproductions come first; a fix without a failing test is a guess.</sub>
