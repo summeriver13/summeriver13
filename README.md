@@ -23,10 +23,10 @@ I work on developer tooling — the layer where a wrong answer from a linter or 
 
 | Layer | Used |
 | --- | --- |
-| Backend | Python (Flask, FastAPI) · Go (Gin) · Ruby (Rails) |
+| Backend | Python (Flask, FastAPI) · Go (Gin) · Ruby (Rails) · C++ |
 | Frontend | React · Vue 3 · Next.js |
 | Runtime | Docker |
-| Domain | CTP market data and order gateways |
+| Domain | CTP market data and order gateways, wrapped from C++ into CPython · backtesting systems |
 | Daily drivers | `uv` · `pnpm` · `ruff` · `biome` · `pytest` · `vitest` · `gh` |
 
 <sub>Reproductions come first; a fix without a failing test is a guess.</sub>
