@@ -18,10 +18,6 @@ I work on developer tooling — the layer where a wrong answer from a linter or 
 | --- | --- |
 | [PyCQA/isort #2728](https://github.com/PyCQA/isort/pull/2728) | An action comment on a continuation line ends the sort section only on the next run |
 | [pylint-dev/pylint #11703](https://github.com/pylint-dev/pylint/pull/11703) | `--load-plugins` checkers emit every message twice under `--jobs > 1` |
-| [sphinx-doc/sphinx #14740](https://github.com/sphinx-doc/sphinx/pull/14740) | Five CLI entry points crash when the environment names an unavailable locale |
-| [adamchainz/blacken-docs #447](https://github.com/adamchainz/blacken-docs/pull/447) | Literal blocks inside reStructuredText directives are not Python |
-| [adamchainz/django-http-compression #72](https://github.com/adamchainz/django-http-compression/pull/72) | Fall back when the interpreter is built without Zstandard support |
-| [theskumar/python-dotenv #730](https://github.com/theskumar/python-dotenv/pull/730) | `dotenv run` resolves commands against the `.env` PATH on Windows |
 
 ## Toolchain
 
