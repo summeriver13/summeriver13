@@ -25,7 +25,7 @@ I work on developer tooling — the layer where a wrong answer from a linter or 
 | --- | --- |
 | Backend | Python (Flask, FastAPI) · Go (Gin) · Ruby (Rails) · C++ |
 | Frontend | React · Vue 3 · Next.js |
-| Infra & data | Docker · nginx · MongoDB |
+| Infra & data | Docker · nginx · PostgreSQL · Redis · MongoDB · DuckDB |
 | Domain | CTP market data and order gateways, wrapped from C++ into CPython · backtesting systems |
 | Daily drivers | `uv` · `pnpm` · `ruff` · `biome` · `pytest` · `vitest` · `gh` |
 
