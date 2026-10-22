@@ -21,6 +21,12 @@ I work on developer tooling — the layer where a wrong answer from a linter or 
 
 ## Toolchain
 
-`uv` · `pnpm` · `ruff` · `biome` · `pytest` · `vitest` · `gh`
+| Layer | Used |
+| --- | --- |
+| Backend | Python (Flask, FastAPI) · Go (Gin) · Ruby (Rails) |
+| Frontend | React · Vue 3 · Next.js |
+| Runtime | Docker |
+| Domain | CTP market data and order gateways |
+| Daily drivers | `uv` · `pnpm` · `ruff` · `biome` · `pytest` · `vitest` · `gh` |
 
 <sub>Reproductions come first; a fix without a failing test is a guess.</sub>
