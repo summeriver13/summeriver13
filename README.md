@@ -12,6 +12,17 @@
 
 I work on developer tooling — the layer where a wrong answer from a linter or a build tool costs more than the code it checks.
 
+## Background
+
+| Period | What |
+| --- | --- |
+| 2026 – | M.Sc. in machine learning and big data, CCNU–UOW Joint Institute |
+| 2024 – 2026 | Trading systems for A-share, HK, US and futures markets: CTP, Futu and QMT gateways, a C++ SDK wrapped into CPython, an Electron strategy terminal |
+| 2024 | Access control and behaviour tracking for hospital operating rooms: face and IC-card identity, ISO 9001 / CE acceptance |
+| 2020 – 2024 | B.Eng. in computer science |
+
+Award: national bronze, China International "Internet+" College Students' Innovation and Entrepreneurship Competition.
+
 ## Upstream work
 
 | Project | Change |
@@ -22,14 +33,21 @@ I work on developer tooling — the layer where a wrong answer from a linter or 
 | [PyCQA/isort #2728](https://github.com/PyCQA/isort/pull/2728) | An action comment on a continuation line ends the sort section only on the next run |
 | [python/cpython #160664](https://github.com/python/cpython/pull/160664) | `test_subprocess.test_getoutput` decoded `cmd.exe`'s OEM output as UTF-8, so it failed on every non-English Windows |
 
+## Projects
+
+| Repository | What it is |
+| --- | --- |
+| [summeriver13/plum](https://github.com/summeriver13/plum) | A-share backtesting and live trading, with the market's rules as first-class citizens: board-level price limits, T+1, halts, delisting settlement, participation-based market impact, point-in-time fundamentals |
+| [summeriver13/herdface](https://github.com/summeriver13/herdface) | Cow face detection and identification: YOLOv8 for detection, EfficientNet-B0 for identity, open-set rejection at AUROC 0.912, Flask demo |
+| [summeriver13/kt-audit](https://github.com/summeriver13/kt-audit) | Audit a knowledge-tracing evaluation before trusting its AUC |
+
 ## Toolchain
 
 | Layer | Used |
 | --- | --- |
 | Backend | Python (Flask, FastAPI) · Go (Gin) · Ruby (Rails) · C++ |
-| Frontend | React · Vue 3 · Next.js |
-| Infra & data | Docker · nginx · PostgreSQL · Redis · MongoDB · DuckDB |
-| Domain | CTP market data and order gateways, wrapped from C++ into CPython · backtesting systems |
+| Frontend & desktop | React · Vue 3 · Next.js · Electron · PyQt6 |
+| Infra & data | Docker · nginx · PostgreSQL · Redis · MongoDB · DuckDB · DolphinDB |
 | Daily drivers | `uv` · `pnpm` · `ruff` · `biome` · `pytest` · `vitest` · `gh` |
 
 <sub>Reproductions come first; a fix without a failing test is a guess.</sub>
