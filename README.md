@@ -14,14 +14,12 @@ I work on developer tooling — the layer where a wrong answer from a linter or 
 
 ## Background
 
-| Period | What |
-| --- | --- |
-| 2026 – | M.Sc. in machine learning and big data, CCNU–UOW Joint Institute |
-| 2024 – 2026 | Trading systems for A-share, HK, US and futures markets: CTP, Futu and QMT gateways, a C++ SDK wrapped into CPython, an Electron strategy terminal |
-| 2024 | Access control and behaviour tracking for hospital operating rooms: face and IC-card identity, ISO 9001 / CE acceptance |
-| 2020 – 2024 | B.Eng. in computer science |
+- **2026 –** M.Sc. in machine learning and big data, CCNU–UOW Joint Institute
+- **2024 – 2026** Trading systems for A-share, HK, US and futures markets: CTP, Futu and QMT gateways, a C++ SDK wrapped into CPython, an Electron strategy terminal
+- **2024** Access control and behaviour tracking for hospital operating rooms: face and IC-card identity, ISO 9001 / CE acceptance
+- **2020 – 2024** B.Eng. in computer science and technology, Inner Mongolia University of Technology
 
-Award: national bronze, China International "Internet+" College Students' Innovation and Entrepreneurship Competition.
+Awards: national bronze, China International "Internet+" College Students' Innovation and Entrepreneurship Competition; second prize, Microsoft Imagine Cup (provincial round).
 
 ## Upstream work
 
@@ -38,6 +36,7 @@ Award: national bronze, China International "Internet+" College Students' Innova
 | Repository | What it is |
 | --- | --- |
 | [summeriver13/plum](https://github.com/summeriver13/plum) | A-share backtesting and live trading, with the market's rules as first-class citizens: board-level price limits, T+1, halts, delisting settlement, participation-based market impact, point-in-time fundamentals |
+| [summeriver13/KLineDeck](https://github.com/summeriver13/KLineDeck) | A-share K-line workbench in Qt: candles drawn with pyqtgraph, Baostock data, local cache with on-demand history |
 | [summeriver13/herdface](https://github.com/summeriver13/herdface) | Cow face detection and identification: YOLOv8 for detection, EfficientNet-B0 for identity, open-set rejection at AUROC 0.912, Flask demo |
 | [summeriver13/kt-audit](https://github.com/summeriver13/kt-audit) | Audit a knowledge-tracing evaluation before trusting its AUC |
 
