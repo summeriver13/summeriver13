@@ -19,8 +19,6 @@ I work on developer tooling — the layer where a wrong answer from a linter or 
 - **2024** Access control and behaviour tracking for hospital operating rooms: face and IC-card identity, ISO 9001 / CE acceptance
 - **2020 – 2024** B.Eng. in computer science and technology, Inner Mongolia University of Technology
 
-Awards: national bronze, China International "Internet+" College Students' Innovation and Entrepreneurship Competition; second prize, Microsoft Imagine Cup (provincial round).
-
 ## Upstream work
 
 | Project | Change |
