@@ -25,20 +25,17 @@ I work on developer tooling — the layer where a wrong answer from a linter or 
 | --- | --- |
 | [pylint-dev/pylint #11650](https://github.com/pylint-dev/pylint/pull/11650) | `pylint --source-root . pkg/mod` crashed when the package was an implicit namespace package that also exists in site-packages — merged, milestone 4.1.4 |
 | [pylint-dev/pylint #11703](https://github.com/pylint-dev/pylint/pull/11703) | `--load-plugins` checkers emitted every message twice under `--jobs > 1` — merged, backported to `4.1.x` |
-| [pylint-dev/astroid #3445](https://github.com/pylint-dev/astroid/pull/3445) | The astroid side of #11650: `is_namespace()` can take a search path, so a namespace package shadowed by site-packages is still recognized |
-| [PyCQA/isort #2728](https://github.com/PyCQA/isort/pull/2728) | An action comment on a continuation line ends the sort section only on the next run |
-| [python/cpython #160664](https://github.com/python/cpython/pull/160664) | `test_subprocess.test_getoutput` decoded `cmd.exe`'s OEM output as UTF-8, so it failed on every non-English Windows |
-| [python/cpython #160716](https://github.com/python/cpython/pull/160716) | The remote PDB interrupt listener half-closed its socket, so Windows dropped the channel after 120 idle seconds |
-| [ruby/TryRuby #258](https://github.com/ruby/TryRuby/pull/258) | Typos and dropped words in the Chinese translation, lessons 1 to 20 |
+| [pylint-dev/astroid #3445](https://github.com/pylint-dev/astroid/pull/3445) | The astroid side of #11650: `is_namespace()` can take a search path, so a namespace package shadowed by site-packages is still recognized — in review |
+| [PyCQA/isort #2728](https://github.com/PyCQA/isort/pull/2728) | An action comment on a continuation line ends the sort section only on the next run — in review |
+| [python/cpython #160664](https://github.com/python/cpython/pull/160664) | `test_subprocess.test_getoutput` decoded `cmd.exe`'s OEM output as UTF-8, so it failed on every non-English Windows — in review |
+| [python/cpython #160716](https://github.com/python/cpython/pull/160716) | The remote PDB interrupt listener half-closed its socket, so Windows dropped the channel after 120 idle seconds — in review |
+| [ruby/TryRuby #258](https://github.com/ruby/TryRuby/pull/258) | Typos and dropped words in the Chinese translation, lessons 1 to 20 — in review |
 
 ## Projects
 
-| Repository | What it is |
-| --- | --- |
-| [summeriver13/plum](https://github.com/summeriver13/plum) | A-share backtesting and live trading, with the market's rules as first-class citizens: board-level price limits, T+1, halts, delisting settlement, participation-based market impact, point-in-time fundamentals |
-| [summeriver13/KLineDeck](https://github.com/summeriver13/KLineDeck) | A-share K-line workbench in Qt: candles drawn with pyqtgraph, Baostock data, local cache with on-demand history |
-| [summeriver13/herdface](https://github.com/summeriver13/herdface) | Cow face detection and identification: YOLOv8 for detection, EfficientNet-B0 for identity, open-set rejection at AUROC 0.912, Flask demo |
-| [summeriver13/kt-audit](https://github.com/summeriver13/kt-audit) | Audit a knowledge-tracing evaluation before trusting its AUC |
+**[plum](https://github.com/summeriver13/plum)** — A-share backtesting and live trading where the market's rules live in the engine, not in the strategy. Board-level price limits (20% on ChiNext and STAR, 5% on ST), T+1 settlement, halts, delisting settlement at the last close, square-root market impact capped by participation, point-in-time fundamentals. Cash and the ledger use `Decimal`, so the book never drifts on float error.
+
+**[kt-audit](https://github.com/summeriver13/kt-audit)** — A pip-installable audit for knowledge-tracing experiments. It answers what the protocol usually leaves open: whether train events precede test events for each user, whether items leak across splits, and whether the reported AUC matches a recomputation from the released predictions. In the pyKT benchmark library, `data_process.py` points `valid` and `test` at the same file, and its own authors warn the results cannot be compared. kt-audit exists so that check runs before anyone cites the number.
 
 ## Toolchain
 
