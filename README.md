@@ -10,7 +10,7 @@
 
 </div>
 
-I work on developer tooling — the layer where a wrong answer from a linter or a build tool costs more than the code it checks.
+I work on the infrastructure other code trusts — linters, language runtimes, and locale data. A wrong answer there is silent and expensive.
 
 ## Background
 
@@ -26,9 +26,10 @@ I work on developer tooling — the layer where a wrong answer from a linter or 
 | [pylint-dev/pylint #11650](https://github.com/pylint-dev/pylint/pull/11650) | `pylint --source-root . pkg/mod` crashed when the package was an implicit namespace package that also exists in site-packages — merged, milestone 4.1.4 |
 | [pylint-dev/pylint #11703](https://github.com/pylint-dev/pylint/pull/11703) | `--load-plugins` checkers emitted every message twice under `--jobs > 1` — merged, backported to `4.1.x` |
 | [pylint-dev/astroid #3445](https://github.com/pylint-dev/astroid/pull/3445) | The astroid side of #11650: `is_namespace()` can take a search path, so a namespace package shadowed by site-packages is still recognized — in review |
-| [PyCQA/isort #2728](https://github.com/PyCQA/isort/pull/2728) | An action comment on a continuation line ends the sort section only on the next run — in review |
-| [python/cpython #160664](https://github.com/python/cpython/pull/160664) | `test_subprocess.test_getoutput` decoded `cmd.exe`'s OEM output as UTF-8, so it failed on every non-English Windows — in review |
-| [python/cpython #160716](https://github.com/python/cpython/pull/160716) | The remote PDB interrupt listener half-closed its socket, so Windows dropped the channel after 120 idle seconds — in review |
+| [PyCQA/isort #2728](https://github.com/PyCQA/isort/pull/2728) | An action comment on a continuation line ends the sort section only on the next run — changes requested; conflicts with upstream |
+| [python/cpython #160664](https://github.com/python/cpython/pull/160664) | `test_subprocess.test_getoutput` decoded `cmd.exe`'s OEM output as UTF-8, so it failed on every non-English Windows — approved |
+| [python/cpython #160716](https://github.com/python/cpython/pull/160716) | The remote PDB interrupt listener half-closed its socket, so Windows dropped the channel after 120 idle seconds — approved |
+| [python-babel/babel #1383](https://github.com/python-babel/babel/pull/1383) | CLDR 49 ordinal day-of-month patterns for `ddd` — approved; waiting for CI and merge |
 | [ruby/TryRuby #258](https://github.com/ruby/TryRuby/pull/258) | Typos and dropped words in the Chinese translation, lessons 1 to 20 — in review |
 
 ## Projects
