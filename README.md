@@ -28,13 +28,15 @@ Auditing KT evaluation in **kt-audit**; upstream work on pylint, astroid, and CP
 
 | Project | Change | Status | Last checked |
 | --- | --- | --- | --- |
-| [pylint-dev/pylint #11650](https://github.com/pylint-dev/pylint/pull/11650) | Fixed a crash when a namespace package also exists in site-packages. | Merged · shipped in 4.1.4 | 2026-11 |
-| [pylint-dev/pylint #11703](https://github.com/pylint-dev/pylint/pull/11703) | Fixed duplicate messages from `--load-plugins` checkers with `--jobs > 1`. | Merged · backported to 4.1.x | 2026-11 |
-| [pylint-dev/astroid #3445](https://github.com/pylint-dev/astroid/pull/3445) | Added an optional search path to `is_namespace()` so a namespace package shadowed by site-packages is still recognized. | In review | 2026-11 |
-| [PyCQA/isort #2728](https://github.com/PyCQA/isort/pull/2728) | Fixed action comments on continuation lines ending a sort section only on the next run. | Changes requested; merge conflict | 2026-11 |
-| [python/cpython #160664](https://github.com/python/cpython/pull/160664) | Fixed `test_subprocess.test_getoutput` decoding `cmd.exe` OEM output as UTF-8 on non-English Windows. | Approved, pending merge | 2026-11 |
-| [python/cpython #160716](https://github.com/python/cpython/pull/160716) | Fixed the remote PDB interrupt listener half-closing its socket on Windows. | Approved, pending merge | 2026-11 |
-| [python-babel/babel #1383](https://github.com/python-babel/babel/pull/1383) | Added CLDR 49 `ddd` ordinal day-of-month patterns; fixes ordinal suffixes in locales using `ddd`. | Approved, pending CI and merge | 2026-11 |
+| [pylint-dev/pylint #11615](https://github.com/pylint-dev/pylint/pull/11615) | Fixed Windows initializer path classification. | Open; changes requested | 2026-11-09 |
+| [pylint-dev/pylint #11650](https://github.com/pylint-dev/pylint/pull/11650) | Fixed a crash when a namespace package also exists in site-packages. | Merged · backported to 4.1.x; awaiting 4.1.4 | 2026-11-09 |
+| [pylint-dev/pylint #11666](https://github.com/pylint-dev/pylint/pull/11666) | Fixed `unused-wildcard-import` false positive for names excluded by `__all__`. | Open; checks green, review required | 2026-11-09 |
+| [pylint-dev/pylint #11703](https://github.com/pylint-dev/pylint/pull/11703) | Fixed duplicate messages from `--load-plugins` checkers with `--jobs > 1`. | Merged · backported to 4.1.x | 2026-11-09 |
+| [pylint-dev/astroid #3445](https://github.com/pylint-dev/astroid/pull/3445) | Added an optional search path to `is_namespace()` so a namespace package shadowed by site-packages is still recognized. | In review | 2026-11-09 |
+| [PyCQA/isort #2728](https://github.com/PyCQA/isort/pull/2728) | Fixed action comments on continuation lines ending a sort section only on the next run. | Changes requested; merge conflict | 2026-11-09 |
+| [python/cpython #160664](https://github.com/python/cpython/pull/160664) | Fixed `test_subprocess.test_getoutput` decoding `cmd.exe` OEM output as UTF-8 on non-English Windows. | Approved; awaiting core review | 2026-11-09 |
+| [python/cpython #160716](https://github.com/python/cpython/pull/160716) | Fixed the remote PDB interrupt listener half-closing its socket on Windows. | Approved, pending merge | 2026-11-09 |
+| [python-babel/babel #1383](https://github.com/python-babel/babel/pull/1383) | Added CLDR 49 `ddd` ordinal day-of-month patterns; fixes ordinal suffixes in locales using `ddd`. | Approved; macOS CI cancelled, rerun needed | 2026-11-09 |
 
 **Docs / community:** [ruby/TryRuby #258](https://github.com/ruby/TryRuby/pull/258) — Chinese translation fixes for lessons 1–20 (in review).
 
